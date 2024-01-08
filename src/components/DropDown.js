@@ -5,7 +5,7 @@ const DropDown = ({languages , setChoosed , setFrom}) => {
     return (
         <div className="select-languageg  flex justify-between rounded-md shadow-lg">
         <select className='border p-3 px-26 w-[54%]' onChange={(e) => setFrom(e.target.value)}>
-           <option value="" selected>Delect Language...</option>
+           <option value="" selected>Detect Language...</option>
            {languages.map((language , index) => <option key={index} value={language.code}>{language.name}</option>)}
         </select>
 
